@@ -1,9 +1,9 @@
 {
   "id": "Highscores",
-  "version": "2.0.3",
+  "version": "1.0.0",
   "name": "Recent High Scores",
-  "author": "Paulzzh",
-  "description": "Mod by a chink, it shows 3 recent high scores instead of only 1.",
+  "author": "guano",
+  "description": "Mod that shows the recent highest ron, tsumo and deal in hands.",
   "preview": "preview.png",
   "entry": "script.js",
   "applyServer": [0, 1, 2, 3]
