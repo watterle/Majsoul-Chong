@@ -1,9 +1,9 @@
 {
-  "id": "Majsoul-Chong",
+  "id": "Highscores",
   "version": "2.0.3",
   "name": "Recent High Scores",
   "author": "Paulzzh",
-  "description": "Mod by a chink, it shows 3 recent high scores instead of only 1. Beware: it sends your name to a chink site for scraping from mjs API",
+  "description": "Mod by a chink, it shows 3 recent high scores instead of only 1.",
   "preview": "preview.png",
   "entry": "script.js",
   "applyServer": [0, 1, 2, 3]
