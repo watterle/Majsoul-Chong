@@ -61,7 +61,7 @@
     //网络请求，铳牌获取
     paulzzh_plugin_zjdc.xhr = function(vui,account_id,which,t) {
         paulzzh_plugin_zjdc.display_clear();
-        vui.me.getChildAt(0).getChildAt(0).text = "High score";
+        vui.me.getChildAt(0).getChildAt(0).text = "Recent Ron Highscore ";
         vui.me.getChildAt(0).getChildAt(0).color = "#e8af71";
         vui.me.getChildAt(0).getChildAt(0).font = "fengyu";
         paulzzh_plugin_zjdc.display_which = 0;
@@ -74,16 +74,16 @@
                     if (ret.code) {
                         var data = []
                         if (ret.data_c){
-                            data.push({"text":"Recent High Score","color":"#ff4e4e","font":"fengyu","data":ret.data_c});
+                            data.push({"text":"Recent Tsumo Highscore","color":"#ff4e4e","font":"fengyu","data":ret.data_c});
                         };
                         if (ret.data_z){
-                            data.push({"text":"Other Recent High Score","color":"#c1c630","font":"fengyu","data":ret.data_z});
+                            data.push({"text":"Recent Deal-In Highscore","color":"#c1c630","font":"fengyu","data":ret.data_z});
                         };
                         if (t.statistic_data){
                             for (var a = 0; a < t.statistic_data.length; a++) {
                                 var r = t.statistic_data[a];
                                 if (which==String(r.mahjong_category)+String(r.game_category)){
-                                    data.push({"text":"Top score","color":"#e8af71","font":"fengyu","data":r.statistic.highest_hu});
+                                    data.push({"text":"Recent Ron Highscore","color":"#e8af71","font":"fengyu","data":r.statistic.highest_hu});
                                     break
                                 }
                             }
